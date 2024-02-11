@@ -10,3 +10,4 @@ a = requests.get(f"https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?
 if a.status_code == 200:
     data = json.loads(a.text)
     print(data[0]["txt"], data[0]["rate"])
+
